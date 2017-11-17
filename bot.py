@@ -65,7 +65,7 @@ def handle_likes():
             users = session.nearby_users()
             for u in users:
                 status = check_swipes()
-                if status == status:
+                if status == 'Send messages':
                     log('Out of swipes.')
                     return
                 action = like_or_nope()
